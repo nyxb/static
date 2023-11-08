@@ -2,6 +2,7 @@
   "scripts": {
     "build": "sh build.sh"
   },
+  "type": "module",
   "devDependencies": {
     "sponsorhub": "^0.0.1"
   }
