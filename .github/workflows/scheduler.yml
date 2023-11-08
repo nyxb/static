@@ -18,13 +18,13 @@ jobs:
         with:
           node-version: lts/*
 
-      - run: npx pnpm i
+      - run: npx bun i
 
       - name: Update sponsors
         run: npm run build
         env:
-          SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
-          SPONSORKIT_GITHUB_LOGIN: ${{ secrets.SPONSORKIT_GITHUB_LOGIN }}
+          SPONSORHUB_GITHUB_TOKEN: ${{ secrets.SPONSORHUB_GITHUB_TOKEN }}
+          SPONSORHUB_GITHUB_LOGIN: ${{ secrets.SPONSORHUB_GITHUB_LOGIN }}
 
       - name: Commit
         uses: EndBug/add-and-commit@v4
