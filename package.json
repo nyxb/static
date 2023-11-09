@@ -4,6 +4,6 @@
   },
   "type": "module",
   "devDependencies": {
-    "sponsorhub": "^0.0.1"
+    "sponsorhub": "^0.0.3"
   }
 }
